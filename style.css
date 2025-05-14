@@ -1,0 +1,154 @@
+:root {
+    --alturaHeader: 6.5vh;
+    --ladoHeader: 6vw;
+}
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body {
+    
+    background-color: #222772;
+}
+a {
+
+    text-decoration: none;
+    color:white;    
+    height: 15px;
+  }
+header {
+    background-color: black;
+    
+}
+.container,.container2 {
+    position: relative;
+    height: 60px;
+    background-color: transparent;
+
+}
+.container {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.container2 {
+    display: block;
+    background-color: #404040; 
+    top: 200px; 
+    height: 600px;  
+}
+.baixo {
+    position: relative;
+    top: 2000px;
+    width: 101%;
+    height: 200px;
+    left: -5px;
+    background-color: #727772;
+}
+.project,.about,.contact {
+    position: fixed;
+    background-color: transparent;
+    color: white;
+    padding: 10px 24px;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: border 0.3s ease;
+    
+}
+@media (max-width: 500px) {
+    .project {
+        color: transparent;
+    }
+    .about {
+       color: transparent;
+    }
+    .contact {
+        color: transparent;
+    }
+}
+@media (max-width: 1020px) {
+    
+    .project {
+        left: 10px;
+    }
+    .about {
+        left: 150px;
+    }
+    .contact {
+        left: 310px;
+    }
+}
+@media (min-width: 1021px) {
+    
+    .project {
+        left: calc(50vw - 500px);
+    }
+    .about {
+        left: calc(50vw - 360px);
+    }
+    .contact {
+        left: calc(50vw - 200px);
+    }
+} 
+
+
+.project:hover,.about:hover,.contact:hover {
+    border: 2px solid #727772;
+}
+
+body,.fundoHeader
+ {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+.fundoHeader {
+    background-color: transparent; 
+    border-radius: 12px
+}
+
+.titulo {
+    position: relative;
+    font-size: 100;
+    top: 50px;
+    left: 35%;
+}
+.titulo2 {
+    position:relative;
+    top:80px; 
+    left:39px;
+    font-size:30px;
+}
+.espaco {
+    position: relative;
+    margin-bottom: 20px;
+}
+.texto1 {
+    position:relative;
+    top:120px; 
+    left:200px;
+    font-size:30px; 
+    width: 600px;
+}
+.animacao {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation: mymove 3s infinite;
+    animation-iteration-count: 1;
+  }
+  @keyframes mymove {
+    from {top: -100px;}
+    to {top: 0px;}
+  }
+  .intro {
+    left: 110px;
+    position: absolute;
+  }
+ .roda {
+    left: 250px;
+    position: absolute;
+ }
