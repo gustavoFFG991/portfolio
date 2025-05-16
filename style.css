@@ -1,16 +1,12 @@
-:root {
-    --alturaHeader: 6.5vh;
-    --ladoHeader: 6vw;
-}
 * {
     padding: 0;
     margin: 0;
 }
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 body {
+    overflow-x: hidden;
     background-color: #222772;
 }
 a {
@@ -25,22 +21,27 @@ a {
 nav {
     justify-content: space-around;
     width: 100vw;
-    height: 8vh;
+    height: 14vh;
+    transform: translateY(-6vh);
     background: #404040;
+    border-radius: 7%;
     display: flex;
     align-items: center; 
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .logo {
+
     letter-spacing: 4px;
-    top:-2px;
+    top:2vh;
     position: relative;
 }
 
 .nav-list {
     list-style: none;
+    position: relative;
     display: flex; 
+    top: calc(3px + 2vh);
 }
 .nav-list li {
     margin-left: 50px;   
@@ -76,7 +77,6 @@ nav {
 
 .container,.container2 {
     position: relative;
-    height: 60px;
     background-color: transparent;
 
 }
@@ -84,19 +84,23 @@ nav {
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    height: 60px;
 }
 .container2 {
-    display: block;
+    display: flex;
     background-color: midnightblue; 
-    position: relative;
     border-radius: 10%;
     top: 350px; 
-    height: 600px;  
+    height: 160vh;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
 }
+
 .baixo {
     position: relative;
     top: 1000px;
-    width: 101%;
+    width: 100vw;
     height: 200px;
     left: -5px;
     background-color: #727772;
@@ -136,9 +140,8 @@ body,.fundoHeader
 .texto1 {
     position:relative;
     top:120px; 
-    left:200px;
     font-size:30px; 
-    width: 600px;
+    width: 70vw;
 }
 .animacao {
     width: 100px;
