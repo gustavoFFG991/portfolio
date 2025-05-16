@@ -2,24 +2,78 @@
     --alturaHeader: 6.5vh;
     --ladoHeader: 6vw;
 }
+* {
+    padding: 0;
+    margin: 0;
+}
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
 body {
-    
     background-color: #222772;
 }
 a {
-
     text-decoration: none;
     color:white;    
     height: 15px;
   }
-header {
-    background-color: black;
-    
+  a:hover {
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+  }
+nav {
+    justify-content: space-around;
+    width: 100vw;
+    height: 8vh;
+    background: #404040;
+    display: flex;
+    align-items: center; 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.logo {
+    letter-spacing: 4px;
+    top:-2px;
+    position: relative;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex; 
+}
+.nav-list li {
+    margin-left: 50px;   
+    letter-spacing: 3px;
+}
+.mobile-bar {
+    display: none;
+    cursor: pointer;
+}
+.mobile-bar div{
+    display: flex; 
+    background: white;
+    margin: 6px;
+    height: 1px;
+    width: 30px;
+   
+}
+
+@media (max-width: 800px) {
+    .nav-list {
+        display: none;
+    }
+    .mobile-bar {
+        display: block;
+        position: absolute;
+        right: 2vw;
+    }
+    .mobile-bar:hover {
+        opacity: 0.7;
+        transition: opacity 0.3s ease;
+    }
+}
+
 .container,.container2 {
     position: relative;
     height: 60px;
@@ -33,70 +87,19 @@ header {
 }
 .container2 {
     display: block;
-    background-color: #404040; 
-    top: 200px; 
+    background-color: midnightblue; 
+    position: relative;
+    border-radius: 10%;
+    top: 350px; 
     height: 600px;  
 }
 .baixo {
     position: relative;
-    top: 2000px;
+    top: 1000px;
     width: 101%;
     height: 200px;
     left: -5px;
     background-color: #727772;
-}
-.project,.about,.contact {
-    position: fixed;
-    background-color: transparent;
-    color: white;
-    padding: 10px 24px;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border: 2px solid transparent;
-    border-radius: 10px;
-    transition: border 0.3s ease;
-    
-}
-@media (max-width: 500px) {
-    .project {
-        color: transparent;
-    }
-    .about {
-       color: transparent;
-    }
-    .contact {
-        color: transparent;
-    }
-}
-@media (max-width: 1020px) {
-    
-    .project {
-        left: 10px;
-    }
-    .about {
-        left: 150px;
-    }
-    .contact {
-        left: 310px;
-    }
-}
-@media (min-width: 1021px) {
-    
-    .project {
-        left: calc(50vw - 500px);
-    }
-    .about {
-        left: calc(50vw - 360px);
-    }
-    .contact {
-        left: calc(50vw - 200px);
-    }
-} 
-
-
-.project:hover,.about:hover,.contact:hover {
-    border: 2px solid #727772;
 }
 
 body,.fundoHeader
@@ -113,14 +116,18 @@ body,.fundoHeader
 .titulo {
     position: relative;
     font-size: 100;
-    top: 50px;
+    top: 110px;
     left: 35%;
 }
 .titulo2 {
     position:relative;
-    top:80px; 
+    top:160px; 
     left:39px;
     font-size:30px;
+    opacity: 0;
+    animation: mymove2 3s ;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
 }
 .espaco {
     position: relative;
@@ -136,14 +143,24 @@ body,.fundoHeader
 .animacao {
     width: 100px;
     height: 100px;
+    color:rgb(24, 1, 48);
     position: relative;
-    animation: mymove 3s infinite;
-    animation-iteration-count: 1;
+    animation: mymove 3s;
   }
   @keyframes mymove {
     from {top: -100px;}
     to {top: 0px;}
   }
+
+  @keyframes mymove2 {
+    from {
+        top: 360px;
+        opacity: 0;
+    }
+    to {
+        top: 160px;
+    opacity: 1;}
+    }
   .intro {
     left: 110px;
     position: absolute;
