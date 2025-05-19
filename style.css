@@ -14,7 +14,7 @@ a {
     color:white;    
     height: 15px;
   }
-  a:hover {
+a:hover {
     opacity: 0.7;
     transition: opacity 0.3s ease;
   }
@@ -23,17 +23,17 @@ nav {
     width: 100vw;
     height: 14vh;
     transform: translateY(-6vh);
-    background: #404040;
+    background: #333;
     border-radius: 7%;
     display: flex;
     align-items: center; 
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
 }
 
 .logo {
 
     letter-spacing: 4px;
-    top:2vh;
+    top:2.2vh;
     position: relative;
 }
 
@@ -41,7 +41,7 @@ nav {
     list-style: none;
     position: relative;
     display: flex; 
-    top: calc(3px + 2vh);
+    top: 2.4vh;
 }
 .nav-list li {
     margin-left: 50px;   
@@ -50,6 +50,7 @@ nav {
 .mobile-bar {
     display: none;
     cursor: pointer;
+    
 }
 .mobile-bar div{
     display: flex; 
@@ -66,8 +67,9 @@ nav {
     }
     .mobile-bar {
         display: block;
-        position: absolute;
+        position: relative;
         right: 2vw;
+        top: calc(3px + 2vh);
     }
     .mobile-bar:hover {
         opacity: 0.7;
@@ -90,13 +92,17 @@ nav {
     display: flex;
     background-color: midnightblue; 
     border-radius: 10%;
-    top: 350px; 
+    top: 550px; 
     height: 160vh;
     width: 100vw;
     flex-direction: column;
     align-items: center;
 }
-
+.container2 h1{
+    position: relative;
+    top: 120px;
+    font-size: 60;
+}
 .baixo {
     position: relative;
     top: 1000px;
@@ -119,13 +125,13 @@ body,.fundoHeader
 
 .titulo {
     position: relative;
-    font-size: 100;
-    top: 110px;
+    font-size: 130;
+    top: 230px;
     left: 35%;
 }
 .titulo2 {
     position:relative;
-    top:160px; 
+    top:390px; 
     left:39px;
     font-size:30px;
     opacity: 0;
@@ -146,7 +152,7 @@ body,.fundoHeader
 .animacao {
     width: 100px;
     height: 100px;
-    color:rgb(24, 1, 48);
+    color:rgb(80, 176, 255);
     position: relative;
     animation: mymove 3s;
   }
@@ -157,11 +163,11 @@ body,.fundoHeader
 
   @keyframes mymove2 {
     from {
-        top: 360px;
+        top: 500px;
         opacity: 0;
     }
     to {
-        top: 160px;
+        top: 300px;
     opacity: 1;}
     }
   .intro {
