@@ -7,7 +7,7 @@ html {
 }
 body {
     overflow-x: hidden;
-    background-color: #222772;
+    background-color: #050011;
 }
 a {
     text-decoration: none;
@@ -103,14 +103,7 @@ nav {
     top: 120px;
     font-size: 60;
 }
-.baixo {
-    position: relative;
-    top: 1000px;
-    width: 100vw;
-    height: 200px;
-    left: -5px;
-    background-color: #727772;
-}
+
 
 body,.fundoHeader
  {
@@ -123,43 +116,44 @@ body,.fundoHeader
     border-radius: 12px
 }
 
-.titulo {
-    position: relative;
-    font-size: 130;
-    top: 230px;
-    left: 35%;
-}
+
 .titulo2 {
     position:relative;
     top:390px; 
-    left:39px;
+    left:10vw;
     font-size:30px;
     opacity: 0;
-    animation: mymove2 3s ;
+    width: 40vw;
+    color: #ddd;
+    animation: mymove2 3s 3s;
     animation-fill-mode: forwards;
-    animation-delay: 2s;
 }
 .espaco {
     position: relative;
     margin-bottom: 20px;
 }
-.texto1 {
-    position:relative;
-    top:120px; 
-    font-size:30px; 
-    width: 70vw;
+
+.titulo {
+    position: relative;
+    top: 230px;
+    left: 10vw;
+    font-size: 130;
+    animation: mymove 3s;
 }
 .animacao {
-    width: 100px;
-    height: 100px;
-    color:rgb(80, 176, 255);
+    width: 50vw;
+    font-size: 130;
+    top: 230px;
+    left: 10vw;
+    color:#fff;
     position: relative;
-    animation: mymove 3s;
+    animation: mymove 3s 1.5s backwards;
   }
   @keyframes mymove {
-    from {top: -100px;}
-    to {top: 0px;}
+    from {opacity: 0;}
+    to {opacity: 1;}
   }
+
 
   @keyframes mymove2 {
     from {
@@ -177,4 +171,47 @@ body,.fundoHeader
  .roda {
     left: 250px;
     position: absolute;
+ }
+ .Coffee {
+    position: absolute;
+    right: 14vw;
+    display: flex;
+    top: 45vh;
+    width: 280px;
+    height: 280px;
+    animation: mymove 3s 1 2s backwards;
+ }
+ .block{
+    position: absolute;
+    width: 340px;
+    height: 450px;
+    background: #111;
+    border-radius: 10%;
+    left: 20vw;
+    top: 30vh;
+ }
+ .baixo {
+    position: relative;
+    top: 2000px;
+    width: 100vw;
+    left: -5px;
+    background-color: #727772;
+    height: 14vh;
+    border-radius: 20%;
+    transform: translateY(6vh);
+ }
+ .square {
+    position: relative;
+    top: 1900px;
+    width: 100vw;
+    left: -5px;
+    background-color: #727772;
+    height: 14vh;
+    transform: translateY(6vh);
+ }
+ .lin {
+    height: 80px;
+    position: relative;
+    top: 1860px;
+    left: 50vw;
  }
